@@ -15,5 +15,8 @@ if __name__ == "__main__":
     while True:
         user_input = input("Your input to ChatGPT: ")
 
+        if user_input == "q":
+            break
+
         response = gpt_chat_bot(user_input)
         print(f"Chatbot: {response}")
